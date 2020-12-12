@@ -9,16 +9,24 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet weak var addGHButton: UIButton!
-    
+    @IBOutlet weak var addGraphicsTable: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         addGHButton.addTarget(self, action: #selector(revealAddGH), for: .touchUpInside)
+        addGraphicsTable.addTarget(self, action: #selector(revealAddGraphicsTable), for: .touchUpInside)
     }
 
     @objc func revealAddGH() {
-        let addGHVC = AddGHViewController()
+        let addVC = AddGHViewController()
         
-        navigationController?.present(addGHVC, animated: true)
+        navigationController?.present(addVC, animated: true)
+    }
+
+    @objc func revealAddGraphicsTable() {
+        let addVC = GHTableViewController()
+
+        navigationController?.pushViewController(addVC, animated: true)
     }
 }
