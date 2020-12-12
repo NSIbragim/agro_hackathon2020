@@ -30,8 +30,49 @@ class HeaderTablewViewCell: UITableViewCell {
     func configureUI() {
         self.backgroundColor = UIColor(red: 0.121, green: 0.121, blue: 0.121, alpha: 1)
 
-        // label
+
+        // Градусы
         var view = UILabel()
+        view.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
+        view.backgroundColor = .clear
+        view.textColor = UIColor(red: 0, green: 0.545, blue: 0.717, alpha: 1)
+        view.font = UIFont.systemFont(ofSize: 18)
+        view.text = "+23°"
+        self.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 15).isActive = true
+        view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 20).isActive = true
+
+        view = UILabel()
+        view.frame = CGRect(x: 0, y: 0, width: 200, height: 20)
+        view.backgroundColor = .clear
+        view.textColor = .white
+        view.font = UIFont.systemFont(ofSize: 18)
+        view.text = "Моя плантация"
+        self.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 15).isActive = true
+        view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 130).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 20).isActive = true
+
+        let imageView = UIImageView()
+        imageView.frame = CGRect(x: 0, y: 0, width: 27, height: 20)
+        imageView.backgroundColor = .clear
+        let imageColor = UIColor(red: 0, green: 0.545, blue: 0.717, alpha: 1)
+        let imageIcon = UIImage(systemName: "plus.circle")?.withTintColor(imageColor, renderingMode: .alwaysOriginal)
+        imageView.image = imageIcon
+        self.addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.widthAnchor.constraint(equalToConstant: 27).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 27).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+        imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 20).isActive = true
+
+        // label
+        view = UILabel()
         view.frame = CGRect(x: 0, y: 0, width: 42, height: 20)
         view.backgroundColor = .clear
         view.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
@@ -42,7 +83,7 @@ class HeaderTablewViewCell: UITableViewCell {
         view.widthAnchor.constraint(equalToConstant: 42).isActive = true
         view.heightAnchor.constraint(equalToConstant: 20).isActive = true
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 40).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 50).isActive = true
 
         // Клубника 1000 кг
         view = UILabel()
@@ -56,7 +97,7 @@ class HeaderTablewViewCell: UITableViewCell {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 76).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 86).isActive = true
 
         view = UILabel()
         view.frame = CGRect(x: 0, y: 0, width: 80, height: 44)
@@ -69,7 +110,7 @@ class HeaderTablewViewCell: UITableViewCell {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 100).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 110).isActive = true
 
         // Срок 36 мес
         view = UILabel()
@@ -83,7 +124,7 @@ class HeaderTablewViewCell: UITableViewCell {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 140).isActive = true
-        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 76).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 86).isActive = true
 
         view = UILabel()
         view.frame = CGRect(x: 0, y: 0, width: 80, height: 44)
@@ -96,7 +137,7 @@ class HeaderTablewViewCell: UITableViewCell {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 140).isActive = true
-        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 100).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 110).isActive = true
 
         // Бюджет 100 000 ₽
         view = UILabel()
@@ -110,7 +151,7 @@ class HeaderTablewViewCell: UITableViewCell {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 260).isActive = true
-        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 76).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 86).isActive = true
 
         view = UILabel()
         view.frame = CGRect(x: 0, y: 0, width: 80, height: 44)
@@ -123,7 +164,7 @@ class HeaderTablewViewCell: UITableViewCell {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 260).isActive = true
-        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 100).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 110).isActive = true
 
 
         // line

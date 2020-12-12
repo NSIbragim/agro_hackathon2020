@@ -25,8 +25,6 @@ class GHTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-
-
         self.tableView.tableHeaderView = UIView()
         self.tableView.backgroundColor = UIColor(red: 0.121, green: 0.121, blue: 0.121, alpha: 1)
         self.clearsSelectionOnViewWillAppear = false
@@ -54,6 +52,10 @@ class GHTableViewController: UITableViewController {
         button.bottomAnchor.constraint(equalTo: tableView.layoutMarginsGuide.bottomAnchor, constant: -20).isActive = true
     }
 
+
+    @objc func leftNavBarItemPressed(){
+
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
