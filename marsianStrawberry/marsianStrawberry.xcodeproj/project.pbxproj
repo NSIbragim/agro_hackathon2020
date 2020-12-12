@@ -10,6 +10,11 @@
 		7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D989576258414C1004A9C88 /* AppDelegate.swift */; };
 		7D989580258414C3004A9C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D98957F258414C3004A9C88 /* Assets.xcassets */; };
 		7D989583258414C3004A9C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D989581258414C3004A9C88 /* LaunchScreen.storyboard */; };
+		7D9895E32584BCF1004A9C88 /* GHTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895E12584BCF1004A9C88 /* GHTableViewController.swift */; };
+		7D9895E42584BCF1004A9C88 /* GHTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D9895E22584BCF1004A9C88 /* GHTableViewController.xib */; };
+		7D9895E92584BE5E004A9C88 /* GHTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895E72584BE5E004A9C88 /* GHTableViewCell.swift */; };
+		7D9895EA2584BE5E004A9C88 /* GHTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D9895E82584BE5E004A9C88 /* GHTableViewCell.xib */; };
+		7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895F22584C316004A9C88 /* GreenHouse.swift */; };
 		C3D8B13D2584AE5000E58D6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B13B2584AE5000E58D6C /* MainViewController.swift */; };
 		C3D8B13E2584AE5000E58D6C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8B13C2584AE5000E58D6C /* MainViewController.xib */; };
 		C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */; };
@@ -22,6 +27,11 @@
 		7D98957F258414C3004A9C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D989582258414C3004A9C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D989584258414C3004A9C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D9895E12584BCF1004A9C88 /* GHTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTableViewController.swift; sourceTree = "<group>"; };
+		7D9895E22584BCF1004A9C88 /* GHTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHTableViewController.xib; sourceTree = "<group>"; };
+		7D9895E72584BE5E004A9C88 /* GHTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTableViewCell.swift; sourceTree = "<group>"; };
+		7D9895E82584BE5E004A9C88 /* GHTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHTableViewCell.xib; sourceTree = "<group>"; };
+		7D9895F22584C316004A9C88 /* GreenHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenHouse.swift; sourceTree = "<group>"; };
 		C3D8B13B2584AE5000E58D6C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3D8B13C2584AE5000E58D6C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGHViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +55,7 @@
 				7D989575258414C1004A9C88 /* Source */,
 				C3D8B1382584AE3600E58D6C /* Main */,
 				C3D8B1402584AE5500E58D6C /* AddGH */,
+				7D9895D82584BC46004A9C88 /* GreenhouseTable */,
 				7D989574258414C1004A9C88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +77,34 @@
 				7D989584258414C3004A9C88 /* Info.plist */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		7D9895D82584BC46004A9C88 /* GreenhouseTable */ = {
+			isa = PBXGroup;
+			children = (
+				7D9895F12584C305004A9C88 /* Model */,
+				7D9895E62584BE3B004A9C88 /* Cell */,
+				7D9895E12584BCF1004A9C88 /* GHTableViewController.swift */,
+				7D9895E22584BCF1004A9C88 /* GHTableViewController.xib */,
+			);
+			path = GreenhouseTable;
+			sourceTree = "<group>";
+		};
+		7D9895E62584BE3B004A9C88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7D9895E72584BE5E004A9C88 /* GHTableViewCell.swift */,
+				7D9895E82584BE5E004A9C88 /* GHTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7D9895F12584C305004A9C88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D9895F22584C316004A9C88 /* GreenHouse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C3D8B1382584AE3600E58D6C /* Main */ = {
@@ -143,9 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9895EA2584BE5E004A9C88 /* GHTableViewCell.xib in Resources */,
 				7D989583258414C3004A9C88 /* LaunchScreen.storyboard in Resources */,
 				C3D8B13E2584AE5000E58D6C /* MainViewController.xib in Resources */,
 				7D989580258414C3004A9C88 /* Assets.xcassets in Resources */,
+				7D9895E42584BCF1004A9C88 /* GHTableViewController.xib in Resources */,
 				C3D8B1452584AE7D00E58D6C /* AddGHViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,8 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9895E32584BCF1004A9C88 /* GHTableViewController.swift in Sources */,
 				C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */,
+				7D9895E92584BE5E004A9C88 /* GHTableViewCell.swift in Sources */,
 				7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */,
+				7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */,
 				C3D8B13D2584AE5000E58D6C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
