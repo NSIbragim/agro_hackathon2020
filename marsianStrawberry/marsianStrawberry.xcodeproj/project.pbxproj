@@ -48,6 +48,11 @@
 		7D9895E92584BE5E004A9C88 /* GHTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895E72584BE5E004A9C88 /* GHTableViewCell.swift */; };
 		7D9895EA2584BE5E004A9C88 /* GHTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D9895E82584BE5E004A9C88 /* GHTableViewCell.xib */; };
 		7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895F22584C316004A9C88 /* GreenHouse.swift */; };
+		C3ADA1BB25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */; };
+		C3ADA1BE25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1BD25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift */; };
+		C3ADA1C625854B9100DA2AB0 /* CalculatorResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1C425854B9100DA2AB0 /* CalculatorResultViewController.swift */; };
+		C3ADA1C725854B9100DA2AB0 /* CalculatorResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3ADA1C525854B9100DA2AB0 /* CalculatorResultViewController.xib */; };
+		C3ADA1CA2585599A00DA2AB0 /* ModalDismissDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1C92585599A00DA2AB0 /* ModalDismissDelegate.swift */; };
 		7DECA220258540D100185BB6 /* HeaderTablewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */; };
 		7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */; };
 		7DECA2252585414700185BB6 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA2242585414700185BB6 /* Harvest.swift */; };
@@ -58,6 +63,8 @@
 		C3D8B14C2584D9F900E58D6C /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B14B2584D9F900E58D6C /* CustomSlider.swift */; };
 		C3D8B14F2584E2D600E58D6C /* UIImage+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B14E2584E2D600E58D6C /* UIImage+BackgroundColor.swift */; };
 		C3D8B1522584E36300E58D6C /* UIColor+Shade.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B1512584E36300E58D6C /* UIColor+Shade.swift */; };
+		C3D8B1622584E98400E58D6C /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B1602584E98400E58D6C /* CalculatorViewController.swift */; };
+		C3D8B1632584E98400E58D6C /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8B1612584E98400E58D6C /* CalculatorViewController.xib */; };
 		C6F27CFE41F2FDFC6858A93F /* Pods_marsianStrawberry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1254A78F4A076E50147F46C /* Pods_marsianStrawberry.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +118,11 @@
 		7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTablewViewCellTableViewCell.xib; sourceTree = "<group>"; };
 		7DECA2242585414700185BB6 /* Harvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harvest.swift; sourceTree = "<group>"; };
 		B1254A78F4A076E50147F46C /* Pods_marsianStrawberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marsianStrawberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorViewController+UIPageViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		C3ADA1BD25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorViewController+UIPageViewControllerDataSource.swift"; sourceTree = "<group>"; };
+		C3ADA1C425854B9100DA2AB0 /* CalculatorResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorResultViewController.swift; sourceTree = "<group>"; };
+		C3ADA1C525854B9100DA2AB0 /* CalculatorResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorResultViewController.xib; sourceTree = "<group>"; };
+		C3ADA1C92585599A00DA2AB0 /* ModalDismissDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDismissDelegate.swift; sourceTree = "<group>"; };
 		C3D8B13B2584AE5000E58D6C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3D8B13C2584AE5000E58D6C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGHViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +130,8 @@
 		C3D8B14B2584D9F900E58D6C /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		C3D8B14E2584E2D600E58D6C /* UIImage+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+BackgroundColor.swift"; sourceTree = "<group>"; };
 		C3D8B1512584E36300E58D6C /* UIColor+Shade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Shade.swift"; sourceTree = "<group>"; };
+		C3D8B1602584E98400E58D6C /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		C3D8B1612584E98400E58D6C /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +272,8 @@
 				7D989575258414C1004A9C88 /* marsianStrawberry */,
 				C3D8B1382584AE3600E58D6C /* Main */,
 				C3D8B1402584AE5500E58D6C /* AddGH */,
+				C3D8B15F2584E96700E58D6C /* Calculator */,
+				C3ADA1C325854B6700DA2AB0 /* CalculatorResult */,
 				7D9895D82584BC46004A9C88 /* GreenhouseTable */,
 				7D0ABE8125852222005158F0 /* SwiftUIGraphics */,
 				C3D8B1542584E36900E58D6C /* Extensions */,
@@ -327,9 +343,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C3ADA1C325854B6700DA2AB0 /* CalculatorResult */ = {
+			isa = PBXGroup;
+			children = (
+				C3ADA1C425854B9100DA2AB0 /* CalculatorResultViewController.swift */,
+				C3ADA1C525854B9100DA2AB0 /* CalculatorResultViewController.xib */,
+			);
+			path = CalculatorResult;
+			sourceTree = "<group>";
+		};
 		C3D8B1382584AE3600E58D6C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C3ADA1C92585599A00DA2AB0 /* ModalDismissDelegate.swift */,
 				C3D8B13B2584AE5000E58D6C /* MainViewController.swift */,
 				C3D8B13C2584AE5000E58D6C /* MainViewController.xib */,
 			);
@@ -352,6 +378,17 @@
 				C3D8B1512584E36300E58D6C /* UIColor+Shade.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3D8B15F2584E96700E58D6C /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8B1602584E98400E58D6C /* CalculatorViewController.swift */,
+				C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */,
+				C3ADA1BD25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift */,
+				C3D8B1612584E98400E58D6C /* CalculatorViewController.xib */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +460,8 @@
 				7D9895E42584BCF1004A9C88 /* GHTableViewController.xib in Resources */,
 				7D0ABF2C25852BCF005158F0 /* overview.json in Resources */,
 				C3D8B1452584AE7D00E58D6C /* AddGHViewController.xib in Resources */,
+				C3D8B1632584E98400E58D6C /* CalculatorViewController.xib in Resources */,
+				C3ADA1C725854B9100DA2AB0 /* CalculatorResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D8B1622584E98400E58D6C /* CalculatorViewController.swift in Sources */,
 				7D0ABF2D25852BCF005158F0 /* IndicatorView.swift in Sources */,
 				7D0ABF1025852BCF005158F0 /* UserData.swift in Sources */,
 				7D0ABF2125852BCF005158F0 /* RangeViewNewGeo.swift in Sources */,
@@ -489,8 +529,11 @@
 				7D0ABF1825852BCF005158F0 /* CardView.swift in Sources */,
 				7D0ABF1225852BCF005158F0 /* Chart.swift in Sources */,
 				7D9895E92584BE5E004A9C88 /* GHTableViewCell.swift in Sources */,
+				C3ADA1C625854B9100DA2AB0 /* CalculatorResultViewController.swift in Sources */,
 				7D0ABF1425852BCF005158F0 /* TimeMarkView.swift in Sources */,
 				C3D8B14F2584E2D600E58D6C /* UIImage+BackgroundColor.swift in Sources */,
+				C3ADA1BE25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift in Sources */,
+				C3ADA1CA2585599A00DA2AB0 /* ModalDismissDelegate.swift in Sources */,
 				7D0ABF2025852BCF005158F0 /* RangeView1.swift in Sources */,
 				7D0ABF1C25852BCF005158F0 /* SimulatedButton.swift in Sources */,
 				7D0ABF3025852BCF005158F0 /* GraphsForChart.swift in Sources */,
@@ -502,6 +545,7 @@
 				7D0ABF0F25852BCF005158F0 /* Data.swift in Sources */,
 				7D0ABF1D25852BCF005158F0 /* CheckMarksView.swift in Sources */,
 				7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */,
+				C3ADA1BB25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift in Sources */,
 				7D0ABF1125852BCF005158F0 /* BindingBounds.swift in Sources */,
 				7D0ABF1525852BCF005158F0 /* XAxisView.swift in Sources */,
 				C3D8B13D2584AE5000E58D6C /* MainViewController.swift in Sources */,
