@@ -14,6 +14,8 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var modeSegment: UISegmentedControl!
     
+    weak var modalDismissDelegate: ModalDismissDelegate?
+    
     typealias Field = (UILabel, UIView, UITextField)
     
     var cropField: Field?
@@ -100,13 +102,13 @@ class CalculatorViewController: UIViewController {
         ]
         
         topTitleLabel.attributedText = NSAttributedString(
-            string: "Настройка теплиц",
+            string: "Настройка плантации",
             attributes: attributes
         )
     }
     
     @objc func didTouchUpInsideCloseButton() {
-        dismiss(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
     func configureModeSegment() {
@@ -183,8 +185,8 @@ class CalculatorViewController: UIViewController {
         )
         
         costField = field(
-            title: "стоимость",
-            placeholder: "руб",
+            title: "бюджет",
+            placeholder: "₽",
             action: #selector(didTapCostField),
             in: secondVC
         )
@@ -260,6 +262,16 @@ class CalculatorViewController: UIViewController {
         
         calculateButton.layer.cornerRadius = 8
         calculateButton.layer.masksToBounds = true
+        
+        calculateButton.addTarget(self, action: #selector(calculate), for: .touchUpInside)
+    }
+    
+    @objc func calculate() {
+        let resultVC = CalculatorResultViewController()
+        
+        resultVC.modalDismissDelegate = modalDismissDelegate
+        
+        present(resultVC, animated: true, completion: nil)
     }
     
     func field(title: String, placeholder: String, action: Selector, in viewController: UIViewController) -> Field {

@@ -21,7 +21,9 @@ class MainViewController: UIViewController {
     @objc func revealAddGH() {
         let addGHVC = CalculatorViewController()
         
-        navigationController?.present(addVC, animated: true)
+        addGHVC.modalDismissDelegate = self
+        
+        navigationController?.present(addGHVC, animated: true)
     }
 
     @objc func revealAddGraphicsTable() {
