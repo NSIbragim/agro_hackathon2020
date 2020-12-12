@@ -19,6 +19,9 @@
 		C3D8B13E2584AE5000E58D6C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8B13C2584AE5000E58D6C /* MainViewController.xib */; };
 		C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */; };
 		C3D8B1452584AE7D00E58D6C /* AddGHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8B1432584AE7D00E58D6C /* AddGHViewController.xib */; };
+		C3D8B14C2584D9F900E58D6C /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B14B2584D9F900E58D6C /* CustomSlider.swift */; };
+		C3D8B14F2584E2D600E58D6C /* UIImage+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B14E2584E2D600E58D6C /* UIImage+BackgroundColor.swift */; };
+		C3D8B1522584E36300E58D6C /* UIColor+Shade.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B1512584E36300E58D6C /* UIColor+Shade.swift */; };
 		C6F27CFE41F2FDFC6858A93F /* Pods_marsianStrawberry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1254A78F4A076E50147F46C /* Pods_marsianStrawberry.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		C3D8B13C2584AE5000E58D6C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGHViewController.swift; sourceTree = "<group>"; };
 		C3D8B1432584AE7D00E58D6C /* AddGHViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGHViewController.xib; sourceTree = "<group>"; };
+		C3D8B14B2584D9F900E58D6C /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		C3D8B14E2584E2D600E58D6C /* UIImage+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+BackgroundColor.swift"; sourceTree = "<group>"; };
+		C3D8B1512584E36300E58D6C /* UIColor+Shade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Shade.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +71,11 @@
 		7D98956A258414C0004A9C88 = {
 			isa = PBXGroup;
 			children = (
-				7D989575258414C1004A9C88 /* Source */,
+				7D989575258414C1004A9C88 /* marsianStrawberry */,
 				C3D8B1382584AE3600E58D6C /* Main */,
 				C3D8B1402584AE5500E58D6C /* AddGH */,
 				7D9895D82584BC46004A9C88 /* GreenhouseTable */,
+				C3D8B1542584E36900E58D6C /* Extensions */,
 				7D989574258414C1004A9C88 /* Products */,
 				811438E46D2F9478FB04D2AC /* Pods */,
 				7320007A1CF673538081AFBB /* Frameworks */,
@@ -83,15 +90,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D989575258414C1004A9C88 /* Source */ = {
+		7D989575258414C1004A9C88 /* marsianStrawberry */ = {
 			isa = PBXGroup;
 			children = (
 				7D989576258414C1004A9C88 /* AppDelegate.swift */,
+				C3D8B14B2584D9F900E58D6C /* CustomSlider.swift */,
 				7D98957F258414C3004A9C88 /* Assets.xcassets */,
 				7D989581258414C3004A9C88 /* LaunchScreen.storyboard */,
 				7D989584258414C3004A9C88 /* Info.plist */,
 			);
-			path = Source;
+			path = marsianStrawberry;
 			sourceTree = "<group>";
 		};
 		7D9895D82584BC46004A9C88 /* GreenhouseTable */ = {
@@ -147,6 +155,15 @@
 				C3D8B1432584AE7D00E58D6C /* AddGHViewController.xib */,
 			);
 			path = AddGH;
+			sourceTree = "<group>";
+		};
+		C3D8B1542584E36900E58D6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8B14E2584E2D600E58D6C /* UIImage+BackgroundColor.swift */,
+				C3D8B1512584E36300E58D6C /* UIColor+Shade.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +286,12 @@
 				7D9895E32584BCF1004A9C88 /* GHTableViewController.swift in Sources */,
 				C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */,
 				7D9895E92584BE5E004A9C88 /* GHTableViewCell.swift in Sources */,
+				C3D8B14F2584E2D600E58D6C /* UIImage+BackgroundColor.swift in Sources */,
 				7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */,
 				7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */,
 				C3D8B13D2584AE5000E58D6C /* MainViewController.swift in Sources */,
+				C3D8B14C2584D9F900E58D6C /* CustomSlider.swift in Sources */,
+				C3D8B1522584E36300E58D6C /* UIColor+Shade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/marsianStrawberry/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/marsianStrawberry/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
