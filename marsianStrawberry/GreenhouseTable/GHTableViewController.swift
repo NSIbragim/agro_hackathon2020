@@ -9,8 +9,10 @@ import UIKit
 
 class GHTableViewController: UITableViewController {
     let GHCellid = "GHCellid"
-    let greenhouses: [GreenHouse] = [GreenHouse(temperature: 15, lightning: 15, acidity: 15),
-                                     GreenHouse(temperature: 25, lightning: 25, acidity: 25)]
+    let greenhouses: [GreenHouse] = [GreenHouse(temperature: 85, lightning: 85, acidity: 15, water: 15),
+                                     GreenHouse(temperature: 15, lightning: 15, acidity: 65, water: 85),
+                                     GreenHouse(temperature: 45, lightning: 35, acidity: 45, water: 15),
+                                     GreenHouse(temperature: 85, lightning: 85, acidity: 85, water: 85)]
     var numberOfGHs = Int()
     
     override func viewDidLoad() {
@@ -18,9 +20,9 @@ class GHTableViewController: UITableViewController {
 
 //        self.tableView.register(UINib.init(nibName: GHCellid, bundle: nil), forCellReuseIdentifier: GHCellid)
         self.tableView.register(GHTableViewCell.self, forCellReuseIdentifier: GHCellid)
-        self.tableView.rowHeight = 150
+        self.tableView.rowHeight = 191 // 175 + 8 сверху + 8 снизу
         self.tableView.tableHeaderView = UIView()
-
+        self.tableView.backgroundColor = UIColor(red: 0.121, green: 0.121, blue: 0.121, alpha: 1)
         self.clearsSelectionOnViewWillAppear = false
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -42,7 +44,8 @@ class GHTableViewController: UITableViewController {
         // Configure the cell...
         print("Configuring cell number: ", indexPath.item)
         cell.setParams(params: greenhouses[indexPath.item], numberOfGH: indexPath.item)
-
+        cell.configureUI(numberOfGH: indexPath.item)
+//        cell.backgroundView = 
         return cell
     }
 
