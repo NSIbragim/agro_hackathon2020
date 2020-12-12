@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     }
 
     @objc func revealAddGH() {
-        let addVC = AddGHViewController()
+        let addGHVC = CalculatorViewController()
         
         navigationController?.present(addVC, animated: true)
     }

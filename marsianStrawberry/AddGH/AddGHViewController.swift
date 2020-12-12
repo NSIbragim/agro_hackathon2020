@@ -46,8 +46,16 @@ class AddGHViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        configureView()
+    }
+    
+    func configureView() {
         view.backgroundColor = UIColor(red: 0.087, green: 0.087, blue: 0.087, alpha: 1)
+        
+        view.addGestureRecognizer(
+            UITapGestureRecognizer(target: self, action: #selector(didTapView))
+        )
         
         configureTopViews()
         configureTitle()
@@ -56,6 +64,10 @@ class AddGHViewController: UIViewController {
         configureLighting()
         configureHumidity()
         configureAdd()
+    }
+    
+    @objc func didTapView() {
+        view.endEditing(false)
     }
     
     func configureTopViews() {
@@ -134,6 +146,10 @@ class AddGHViewController: UIViewController {
         titleFieldView.backgroundColor = UIColor(red: 0.121, green: 0.121, blue: 0.121, alpha: 1)
         titleFieldView.layer.cornerRadius = 10
         
+        titleFieldView.addGestureRecognizer(
+            UITapGestureRecognizer(target: self, action: #selector(didTapTitleField))
+        )
+        
         titleField.attributedPlaceholder = NSAttributedString(
             string: "BFL46CFCJ2",
             attributes: placeholderAttributes
@@ -141,6 +157,10 @@ class AddGHViewController: UIViewController {
         
         titleField.typingAttributes = textAttributes
         titleField.defaultTextAttributes = textAttributes
+    }
+    
+    @objc func didTapTitleField() {
+        titleField.becomeFirstResponder()
     }
     
     func configureSensors() {
