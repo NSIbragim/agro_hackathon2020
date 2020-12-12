@@ -39,7 +39,7 @@ class GHTableViewCell: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalToConstant: 335).isActive = true
         view.heightAnchor.constraint(equalToConstant: 175).isActive = true
-        view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 20).isActive = true
+        view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 25).isActive = true
         view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 8).isActive = true
 
 
