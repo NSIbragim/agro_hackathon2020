@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="marsianStrawberry" customModuleProvider="target">
             <connections>
                 <outlet property="addGHButton" destination="c1a-GK-Wlv" id="VCx-lI-792"/>
+                <outlet property="addGraphicsTable" destination="LGK-Hd-2Ns" id="BE6-Sz-IKU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,11 +24,17 @@
                     <rect key="frame" x="161.5" y="433" width="91" height="30"/>
                     <state key="normal" title="Open AddGH"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGK-Hd-2Ns">
+                    <rect key="frame" x="137.5" y="373" width="139" height="30"/>
+                    <state key="normal" title="Open graphics table"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="c1a-GK-Wlv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ETJ-ef-Fqu"/>
+                <constraint firstItem="LGK-Hd-2Ns" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YhW-qQ-cx1"/>
+                <constraint firstItem="c1a-GK-Wlv" firstAttribute="top" secondItem="LGK-Hd-2Ns" secondAttribute="bottom" constant="30" id="bth-Bw-A6R"/>
                 <constraint firstItem="c1a-GK-Wlv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eoR-nK-hGX"/>
             </constraints>
             <point key="canvasLocation" x="1" y="153"/>
