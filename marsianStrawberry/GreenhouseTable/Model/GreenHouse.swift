@@ -8,10 +8,11 @@
 import Foundation
 
 class GreenHouse {
-    let temperature, lightning, acidity: Float?
-    init(temperature: Float, lightning: Float, acidity: Float) {
+    let temperature, lightning, acidity, water: Float?
+    init(temperature: Float, lightning: Float, acidity: Float, water: Float) {
         self.temperature = temperature
         self.lightning = lightning
         self.acidity = acidity
+        self.water = water
     }
 }
