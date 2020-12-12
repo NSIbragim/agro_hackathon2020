@@ -29,9 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainVC = MainViewController()
         
         mainVC.tabBarItem = UITabBarItem(
-            title: "Main",
-            image: UIImage(systemName: "house.fill"),
-            tag: 1
+            title: nil,
+            image: UIImage(systemName: "house"),
+            selectedImage: UIImage(systemName: "house.fill")
         )
         
         let tabBarController = UITabBarController()
@@ -42,6 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        firstVC.addLocationDelegate = secondVC
 //        secondVC.revealLocationDelegate = firstVC
+        
+        if let items = tabBarController.tabBar.items {
+            for item in items {
+                item.title = ""
+                item.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0);
+            }
+        }
 
         window = UIWindow()
         window?.backgroundColor = .white
