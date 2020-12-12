@@ -10,9 +10,11 @@ import PNChart
 
 class GHTableViewCell: UITableViewCell {
     var params = GreenHouse(temperature: 0, lightning: 0, acidity: 0, water: 0)
+    var numberOfGH = Int()
 
-    func setParams(params: GreenHouse, numberOfGH: Int?) {
+    func setParams(params: GreenHouse, numberOfGH: Int) {
         self.params = params
+        self.numberOfGH = numberOfGH
     }
 
     override func awakeFromNib() {
@@ -22,7 +24,7 @@ class GHTableViewCell: UITableViewCell {
 
     }
 
-    func configureUI(numberOfGH: Int){
+    func configureUI(){
 
         self.backgroundColor = UIColor(red: 0.121, green: 0.121, blue: 0.121, alpha: 1)
 
@@ -49,7 +51,7 @@ class GHTableViewCell: UITableViewCell {
         view.backgroundColor = .clear
         view.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         view.font = UIFont.systemFont(ofSize: 17)
-        view.text = "Теплица №" + String(numberOfGH + 1)
+        view.text = "Теплица №" + String(numberOfGH)
         parent = self.contentView
         parent.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false

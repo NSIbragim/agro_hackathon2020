@@ -48,6 +48,9 @@
 		7D9895E92584BE5E004A9C88 /* GHTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895E72584BE5E004A9C88 /* GHTableViewCell.swift */; };
 		7D9895EA2584BE5E004A9C88 /* GHTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D9895E82584BE5E004A9C88 /* GHTableViewCell.xib */; };
 		7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9895F22584C316004A9C88 /* GreenHouse.swift */; };
+		7DECA220258540D100185BB6 /* HeaderTablewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */; };
+		7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */; };
+		7DECA2252585414700185BB6 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA2242585414700185BB6 /* Harvest.swift */; };
 		C3D8B13D2584AE5000E58D6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B13B2584AE5000E58D6C /* MainViewController.swift */; };
 		C3D8B13E2584AE5000E58D6C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8B13C2584AE5000E58D6C /* MainViewController.xib */; };
 		C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */; };
@@ -104,6 +107,9 @@
 		7D9895E72584BE5E004A9C88 /* GHTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTableViewCell.swift; sourceTree = "<group>"; };
 		7D9895E82584BE5E004A9C88 /* GHTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHTableViewCell.xib; sourceTree = "<group>"; };
 		7D9895F22584C316004A9C88 /* GreenHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenHouse.swift; sourceTree = "<group>"; };
+		7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTablewViewCell.swift; sourceTree = "<group>"; };
+		7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTablewViewCellTableViewCell.xib; sourceTree = "<group>"; };
+		7DECA2242585414700185BB6 /* Harvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harvest.swift; sourceTree = "<group>"; };
 		B1254A78F4A076E50147F46C /* Pods_marsianStrawberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marsianStrawberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D8B13B2584AE5000E58D6C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3D8B13C2584AE5000E58D6C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -284,29 +290,32 @@
 		7D9895D82584BC46004A9C88 /* GreenhouseTable */ = {
 			isa = PBXGroup;
 			children = (
-				7D9895F12584C305004A9C88 /* Model */,
-				7D9895E62584BE3B004A9C88 /* Cell */,
+				7D9895F12584C305004A9C88 /* Models */,
+				7D9895E62584BE3B004A9C88 /* Cells */,
 				7D9895E12584BCF1004A9C88 /* GHTableViewController.swift */,
 				7D9895E22584BCF1004A9C88 /* GHTableViewController.xib */,
 			);
 			path = GreenhouseTable;
 			sourceTree = "<group>";
 		};
-		7D9895E62584BE3B004A9C88 /* Cell */ = {
+		7D9895E62584BE3B004A9C88 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				7D9895E72584BE5E004A9C88 /* GHTableViewCell.swift */,
 				7D9895E82584BE5E004A9C88 /* GHTableViewCell.xib */,
+				7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */,
+				7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
-		7D9895F12584C305004A9C88 /* Model */ = {
+		7D9895F12584C305004A9C88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				7D9895F22584C316004A9C88 /* GreenHouse.swift */,
+				7DECA2242585414700185BB6 /* Harvest.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		811438E46D2F9478FB04D2AC /* Pods */ = {
@@ -406,6 +415,7 @@
 			files = (
 				7D0ABF2B25852BCF005158F0 /* chart.json in Resources */,
 				7D0ABF2625852BCF005158F0 /* Preview Assets.xcassets in Resources */,
+				7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */,
 				7D9895EA2584BE5E004A9C88 /* GHTableViewCell.xib in Resources */,
 				7D989583258414C3004A9C88 /* LaunchScreen.storyboard in Resources */,
 				C3D8B13E2584AE5000E58D6C /* MainViewController.xib in Resources */,
@@ -473,6 +483,7 @@
 				7D0ABF0E25852BCF005158F0 /* ContentView.swift in Sources */,
 				7D0ABF1725852BCF005158F0 /* ChartView.swift in Sources */,
 				C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */,
+				7DECA220258540D100185BB6 /* HeaderTablewViewCell.swift in Sources */,
 				7D0ABF1625852BCF005158F0 /* HStackChartsView.swift in Sources */,
 				7D0ABF1F25852BCF005158F0 /* CheckBoxView.swift in Sources */,
 				7D0ABF1825852BCF005158F0 /* CardView.swift in Sources */,
@@ -487,6 +498,7 @@
 				7D0ABF2225852BCF005158F0 /* RangeView.swift in Sources */,
 				7D0ABF1325852BCF005158F0 /* TickerView.swift in Sources */,
 				7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */,
+				7DECA2252585414700185BB6 /* Harvest.swift in Sources */,
 				7D0ABF0F25852BCF005158F0 /* Data.swift in Sources */,
 				7D0ABF1D25852BCF005158F0 /* CheckMarksView.swift in Sources */,
 				7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */,
