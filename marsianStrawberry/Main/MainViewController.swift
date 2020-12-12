@@ -19,6 +19,6 @@ class MainViewController: UIViewController {
     @objc func revealAddGH() {
         let addGHVC = AddGHViewController()
         
-        navigationController?.pushViewController(addGHVC, animated: true)
+        navigationController?.present(addGHVC, animated: true)
     }
 }
