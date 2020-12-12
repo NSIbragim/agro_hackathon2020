@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D989576258414C1004A9C88 /* AppDelegate.swift */; };
-		7D989579258414C1004A9C88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D989578258414C1004A9C88 /* SceneDelegate.swift */; };
-		7D98957B258414C1004A9C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D98957A258414C1004A9C88 /* ViewController.swift */; };
-		7D98957E258414C1004A9C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D98957C258414C1004A9C88 /* Main.storyboard */; };
 		7D989580258414C3004A9C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D98957F258414C3004A9C88 /* Assets.xcassets */; };
 		7D989583258414C3004A9C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D989581258414C3004A9C88 /* LaunchScreen.storyboard */; };
+		C3D8B13D2584AE5000E58D6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B13B2584AE5000E58D6C /* MainViewController.swift */; };
+		C3D8B13E2584AE5000E58D6C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8B13C2584AE5000E58D6C /* MainViewController.xib */; };
+		C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */; };
+		C3D8B1452584AE7D00E58D6C /* AddGHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8B1432584AE7D00E58D6C /* AddGHViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D989573258414C1004A9C88 /* marsianStrawberry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marsianStrawberry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D989576258414C1004A9C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D989578258414C1004A9C88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D98957A258414C1004A9C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D98957D258414C1004A9C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D98957F258414C3004A9C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D989582258414C3004A9C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D989584258414C3004A9C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D8B13B2584AE5000E58D6C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C3D8B13C2584AE5000E58D6C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGHViewController.swift; sourceTree = "<group>"; };
+		C3D8B1432584AE7D00E58D6C /* AddGHViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGHViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,9 @@
 		7D98956A258414C0004A9C88 = {
 			isa = PBXGroup;
 			children = (
-				7D989575258414C1004A9C88 /* marsianStrawberry */,
+				7D989575258414C1004A9C88 /* Source */,
+				C3D8B1382584AE3600E58D6C /* Main */,
+				C3D8B1402584AE5500E58D6C /* AddGH */,
 				7D989574258414C1004A9C88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +57,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D989575258414C1004A9C88 /* marsianStrawberry */ = {
+		7D989575258414C1004A9C88 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				7D989576258414C1004A9C88 /* AppDelegate.swift */,
-				7D989578258414C1004A9C88 /* SceneDelegate.swift */,
-				7D98957A258414C1004A9C88 /* ViewController.swift */,
-				7D98957C258414C1004A9C88 /* Main.storyboard */,
 				7D98957F258414C3004A9C88 /* Assets.xcassets */,
 				7D989581258414C3004A9C88 /* LaunchScreen.storyboard */,
 				7D989584258414C3004A9C88 /* Info.plist */,
 			);
-			path = marsianStrawberry;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C3D8B1382584AE3600E58D6C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8B13B2584AE5000E58D6C /* MainViewController.swift */,
+				C3D8B13C2584AE5000E58D6C /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C3D8B1402584AE5500E58D6C /* AddGH */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8B1422584AE7D00E58D6C /* AddGHViewController.swift */,
+				C3D8B1432584AE7D00E58D6C /* AddGHViewController.xib */,
+			);
+			path = AddGH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D989583258414C3004A9C88 /* LaunchScreen.storyboard in Resources */,
+				C3D8B13E2584AE5000E58D6C /* MainViewController.xib in Resources */,
 				7D989580258414C3004A9C88 /* Assets.xcassets in Resources */,
-				7D98957E258414C1004A9C88 /* Main.storyboard in Resources */,
+				C3D8B1452584AE7D00E58D6C /* AddGHViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +157,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D98957B258414C1004A9C88 /* ViewController.swift in Sources */,
+				C3D8B1442584AE7D00E58D6C /* AddGHViewController.swift in Sources */,
 				7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */,
-				7D989579258414C1004A9C88 /* SceneDelegate.swift in Sources */,
+				C3D8B13D2584AE5000E58D6C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7D98957C258414C1004A9C88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D98957D258414C1004A9C88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D989581258414C3004A9C88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,8 +299,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P9784LPU65;
-				INFOPLIST_FILE = marsianStrawberry/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,8 +318,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P9784LPU65;
-				INFOPLIST_FILE = marsianStrawberry/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

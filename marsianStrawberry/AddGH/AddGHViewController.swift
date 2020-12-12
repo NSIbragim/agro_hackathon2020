@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  AddGHViewController.swift
 //  marsianStrawberry
 //
-//  Created by i.mamadaev on 11.12.2020.
+//  Created by Nikita Arutyunov on 12.12.2020.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddGHViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
