@@ -48,7 +48,7 @@
 		7D98956A258414C0004A9C88 = {
 			isa = PBXGroup;
 			children = (
-				7D989575258414C1004A9C88 /* Source */,
+				7D989575258414C1004A9C88 /* marsianStrawberry */,
 				C3D8B1382584AE3600E58D6C /* Main */,
 				C3D8B1402584AE5500E58D6C /* AddGH */,
 				C3D8B1542584E36900E58D6C /* Extensions */,
@@ -64,7 +64,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D989575258414C1004A9C88 /* Source */ = {
+		7D989575258414C1004A9C88 /* marsianStrawberry */ = {
 			isa = PBXGroup;
 			children = (
 				7D989576258414C1004A9C88 /* AppDelegate.swift */,
@@ -73,7 +73,7 @@
 				7D989581258414C3004A9C88 /* LaunchScreen.storyboard */,
 				7D989584258414C3004A9C88 /* Info.plist */,
 			);
-			path = Source;
+			path = marsianStrawberry;
 			sourceTree = "<group>";
 		};
 		C3D8B1382584AE3600E58D6C /* Main */ = {
