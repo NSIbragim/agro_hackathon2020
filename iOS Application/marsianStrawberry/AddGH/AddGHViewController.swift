@@ -44,6 +44,18 @@ class AddGHViewController: UIViewController {
         Int(humiditySlider.value)
     }
     
+    var gh: GreenHouse? {
+        didSet {
+            guard let temperature = gh?.temperature,
+                  let lighting = gh?.lightning,
+                  let water = gh?.water else { return }
+            
+            temperatureSlider.setValue(temperature, animated: true)
+            lightingSlider.setValue(lighting, animated: true)
+            humiditySlider.setValue(water, animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -205,17 +217,17 @@ class AddGHViewController: UIViewController {
         ]
         
         temperatureTitleLabel.attributedText = NSAttributedString(
-            string: "Температура",
+            string: "Освещение",
             attributes: titleAttributes
         )
         
         temperatureValueLabel.attributedText = NSAttributedString(
-            string: "0°",
+            string: "12 фот",
             attributes: valueAttributes
         )
         
-        temperatureSlider.minimumValue = -30
-        temperatureSlider.maximumValue = 30
+        temperatureSlider.minimumValue = -100
+        temperatureSlider.maximumValue = 100
         temperatureSlider.value = 23
         
         temperatureSlider.addTarget(self, action: #selector(temperatureChanged), for: .valueChanged)
@@ -224,7 +236,7 @@ class AddGHViewController: UIViewController {
     }
     
     @objc func temperatureChanged() {
-        temperatureValueLabel.text = "\(temperature > 0 ? "+" : "")\(temperature)°"
+        temperatureValueLabel.text = "\(temperature) фот"
     }
     
     func configureLighting() {
@@ -249,18 +261,18 @@ class AddGHViewController: UIViewController {
         ]
         
         lightingTitleLabel.attributedText = NSAttributedString(
-            string: "Освещение",
+            string: "Кислотность",
             attributes: titleAttributes
         )
         
         lightingValueLabel.attributedText = NSAttributedString(
-            string: "8 ч.",
+            string: "5ph",
             attributes: valueAttributes
         )
         
         lightingSlider.minimumValue = 0
-        lightingSlider.maximumValue = 24
-        lightingSlider.value = 8
+        lightingSlider.maximumValue = 100
+        lightingSlider.value = 5
         
         lightingSlider.addTarget(self, action: #selector(lightingChanged), for: .valueChanged)
         
@@ -268,7 +280,7 @@ class AddGHViewController: UIViewController {
     }
     
     @objc func lightingChanged() {
-        lightingValueLabel.text = "\(lighting) ч."
+        lightingValueLabel.text = "\(lighting)ph"
     }
     
     func configureHumidity() {
@@ -298,7 +310,7 @@ class AddGHViewController: UIViewController {
         )
         
         humidityValueLabel.attributedText = NSAttributedString(
-            string: "75 %",
+            string: "25 %",
             attributes: valueAttributes
         )
         
@@ -358,5 +370,11 @@ class AddGHViewController: UIViewController {
         
         addButton.layer.cornerRadius = 8
         addButton.layer.masksToBounds = true
+        
+        addButton.addTarget(self, action: #selector(add), for: .touchUpInside)
+    }
+    
+    @objc func add() {
+        dismiss(animated: true, completion: nil)
     }
 }

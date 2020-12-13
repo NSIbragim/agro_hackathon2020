@@ -9,6 +9,10 @@ import UIKit
 import PNChart
 
 class GHMoreInfoViewController: UIViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
 
     var params = GreenHouse(temperature: 0, lightning: 0, acidity: 0, water: 0)
     var numberOfGH = 0

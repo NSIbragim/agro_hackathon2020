@@ -7,7 +7,11 @@
 
 import UIKit
 
-class GHTableViewController: UITableViewController {
+class GHTableViewController: UITableViewController, ModalDismissDelegate {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     let GHCellID = "GHCellID"
     let HeaderCellID = "HeaderCellID"
 
@@ -40,6 +44,8 @@ class GHTableViewController: UITableViewController {
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.backgroundColor = UIColor(red: 0, green: 0.396, blue: 0.521, alpha: 1)
         self.view.addSubview(button)
+        
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
 
         //set constrains
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -48,6 +54,14 @@ class GHTableViewController: UITableViewController {
         button.heightAnchor.constraint(equalToConstant: 44).isActive = true
         button.leftAnchor.constraint(equalTo: tableView.layoutMarginsGuide.leftAnchor, constant: 0).isActive = true
         button.bottomAnchor.constraint(equalTo: tableView.layoutMarginsGuide.bottomAnchor, constant: -20).isActive = true
+    }
+    
+    @objc func didTapButton() {
+        let calculatorVC = CalculatorViewController()
+        
+        calculatorVC.modalDismissDelegate = self
+        
+        navigationController?.present(calculatorVC, animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +91,7 @@ class GHTableViewController: UITableViewController {
                 self.tableView.rowHeight = 250
             }
             let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCellID, for: indexPath) as! HeaderTablewViewCell
+            cell.selectionStyle = .none
             cell.setParams(params: harvestParams, numberOfGH: greenhouses.count)
             cell.configureUI()
             return cell
@@ -96,6 +111,7 @@ class GHTableViewController: UITableViewController {
         } else {
             // костыльное программирование
             let cell = UITableViewCell()
+            cell.selectionStyle = .none
             cell.isUserInteractionEnabled = false
             cell.backgroundColor = UIColor(red: 0.121, green: 0.121, blue: 0.121, alpha: 1)
             self.tableView.rowHeight = 80
@@ -106,10 +122,21 @@ class GHTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.item)
         self.tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
+        
+        if indexPath.item == 0 {
+            let addGHVC = AddGHViewController()
+            
+            navigationController?.present(addGHVC, animated: true, completion: nil)
+        }
+        
         if (indexPath.item > 0) && (indexPath.item < greenhouses.count - 1){
             let moreInfoVC = GHMoreInfoViewController()
             moreInfoVC.setParams(params: greenhouses[indexPath.item - 1], numberOfGH: indexPath.item)
             navigationController?.pushViewController(moreInfoVC, animated: true)
         }
+    }
+    
+    func dismissAll(animated: Bool) {
+        navigationController?.dismiss(animated: animated, completion: nil)
     }
 }

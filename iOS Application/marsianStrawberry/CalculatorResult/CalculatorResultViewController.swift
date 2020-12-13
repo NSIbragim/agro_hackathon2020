@@ -107,7 +107,7 @@ class CalculatorResultViewController: UIViewController {
         ]
         
         titleLabel.attributedText = NSAttributedString(
-            string: "1000 кг клубники",
+            string: "7500 кг клубники",
             attributes: attributes
         )
     }
@@ -127,12 +127,12 @@ class CalculatorResultViewController: UIViewController {
         ]
         
         countLabel.attributedText = NSAttributedString(
-            string: "3 теплицы",
+            string: "5 теплиц",
             attributes: attributes
         )
         
         timingLabel.attributedText = NSAttributedString(
-            string: "36 месяцев",
+            string: "3 месяца",
             attributes: attributes
         )
     }
