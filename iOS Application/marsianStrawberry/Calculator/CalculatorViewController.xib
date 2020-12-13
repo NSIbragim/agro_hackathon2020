@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorViewController" customModule="marsianStrawberry" customModuleProvider="target">
+            <connections>
+                <outlet property="calculateButton" destination="MSA-UZ-Udq" id="IdI-sm-6kH"/>
+                <outlet property="modeSegment" destination="fhg-2c-k3a" id="gYi-Uf-SkT"/>
+                <outlet property="topCloseButton" destination="0tg-GB-9HS" id="uqM-R1-mcq"/>
+                <outlet property="topIndicatorView" destination="mbh-d7-So5" id="K88-Zn-ncq"/>
+                <outlet property="topTitleLabel" destination="zGX-xl-Ese" id="qbH-EZ-6Z7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbh-d7-So5" userLabel="TopIndicatorView">
+                    <rect key="frame" x="187" y="6" width="40" height="4"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="Jef-PH-Tm7"/>
+                        <constraint firstAttribute="width" constant="40" id="pXu-Gm-IFJ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGX-xl-Ese" userLabel="TopTitleLabel">
+                    <rect key="frame" x="28" y="26" width="358" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="0oc-9c-pl1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tg-GB-9HS" userLabel="TopCloseButton">
+                    <rect key="frame" x="16" y="27" width="16" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="Fxm-WM-XQl"/>
+                        <constraint firstAttribute="height" constant="20" id="m6U-E0-7Ib"/>
+                    </constraints>
+                    <state key="normal" image="xmark" catalog="system"/>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-2c-k3a">
+                    <rect key="frame" x="20" y="92" width="374" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="ydz-mk-4uy"/>
+                    </constraints>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSA-UZ-Udq">
+                    <rect key="frame" x="20" y="786" width="374" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="lwA-Lw-H5v"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mbh-d7-So5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Dn-LT-sqL"/>
+                <constraint firstItem="fhg-2c-k3a" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="-20" id="4Ej-tO-pUk"/>
+                <constraint firstAttribute="trailing" secondItem="MSA-UZ-Udq" secondAttribute="trailing" constant="20" id="4SI-h0-XWu"/>
+                <constraint firstAttribute="bottom" secondItem="MSA-UZ-Udq" secondAttribute="bottom" constant="66" id="AON-a4-hFd"/>
+                <constraint firstItem="0tg-GB-9HS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="H3k-kN-0Ic"/>
+                <constraint firstItem="zGX-xl-Ese" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="Inv-xP-RMn"/>
+                <constraint firstItem="fhg-2c-k3a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="92" id="LSc-2z-WmE"/>
+                <constraint firstItem="MSA-UZ-Udq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Oye-td-XOH"/>
+                <constraint firstItem="fhg-2c-k3a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="RTV-Kj-v9W"/>
+                <constraint firstItem="zGX-xl-Ese" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="S7s-8r-T04"/>
+                <constraint firstAttribute="trailing" secondItem="zGX-xl-Ese" secondAttribute="trailing" constant="28" id="U9C-Zr-e0J"/>
+                <constraint firstItem="0tg-GB-9HS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="cVJ-pg-S7B"/>
+                <constraint firstItem="mbh-d7-So5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="6" id="h7n-an-KQQ"/>
+            </constraints>
+            <point key="canvasLocation" x="94" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
