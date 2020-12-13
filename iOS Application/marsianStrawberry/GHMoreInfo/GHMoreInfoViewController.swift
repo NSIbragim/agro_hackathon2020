@@ -7,6 +7,7 @@
 
 import UIKit
 import PNChart
+import SwiftUI
 
 class GHMoreInfoViewController: UIViewController {
     
@@ -397,6 +398,9 @@ class GHMoreInfoViewController: UIViewController {
         view.heightAnchor.constraint(equalToConstant: 50).isActive = true
         view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 20).isActive = true
         view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 379).isActive = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(buttonTapped))
+        view.isUserInteractionEnabled = true
+        view.addGestureRecognizer(tap)
 
         view = UILabel()
         view.frame = CGRect(x: 0, y: 0, width: 144, height: 18)
@@ -540,4 +544,9 @@ class GHMoreInfoViewController: UIViewController {
     }
 
 
+    @objc func buttonTapped(){
+        let swiftUIView = ContentView()
+        let childView = UIHostingController(rootView: swiftUIView)
+        navigationController?.pushViewController(childView, animated: true)
+    }
 }
