@@ -42,6 +42,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             selectedImage: UIImage(systemName: "bell.fill")?.withTintColor(UIColor(red: 0, green: 0.396, blue: 0.521, alpha: 1)).withRenderingMode(.alwaysOriginal)
         )
         
+        let profileVC = ProfileViewController()
+        
+        profileVC.tabBarItem = UITabBarItem(
+            title: nil,
+            image: UIImage(systemName: "person")?.withTintColor(UIColor(red: 0.792, green: 0.792, blue: 0.792, alpha: 1)).withRenderingMode(.alwaysOriginal),
+            selectedImage: UIImage(systemName: "person.fill")?.withTintColor(UIColor(red: 0, green: 0.396, blue: 0.521, alpha: 1)).withRenderingMode(.alwaysOriginal)
+        )
+        
         let tabBarController = UITabBarController()
         
         let mainNC = UINavigationController(rootViewController: mainVC)
@@ -59,7 +67,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notificationsNC.navigationBar.shadowImage = UIImage()
         notificationsNC.navigationBar.isTranslucent = false
         
-        tabBarController.setViewControllers([mainNC, notificationsNC], animated: false)
+        let profileNC = UINavigationController(rootViewController: profileVC)
+        
+        profileNC.navigationBar.barTintColor = UIColor(red: 0.087, green: 0.087, blue: 0.087, alpha: 1)
+        profileNC.navigationBar.tintColor = .white
+        profileNC.navigationBar.barStyle = .black
+        profileNC.navigationBar.shadowImage = UIImage()
+        profileNC.navigationBar.isTranslucent = false
+        
+        tabBarController.setViewControllers([mainNC, notificationsNC, profileNC], animated: false)
         
         tabBarController.tabBar.barTintColor = UIColor(red: 0.087, green: 0.087, blue: 0.087, alpha: 1)
         tabBarController.tabBar.isTranslucent = false

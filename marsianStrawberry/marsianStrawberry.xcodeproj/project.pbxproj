@@ -57,6 +57,8 @@
 		C31FBC2425860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC2325860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift */; };
 		C31FBC2925860D2C00129616 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC2725860D2C00129616 /* NotificationTableViewCell.swift */; };
 		C31FBC2A25860D2C00129616 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31FBC2825860D2C00129616 /* NotificationTableViewCell.xib */; };
+		C31FBC3E258619B500129616 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC3C258619B500129616 /* ProfileViewController.swift */; };
+		C31FBC3F258619B500129616 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31FBC3D258619B500129616 /* ProfileViewController.xib */; };
 		C3ADA1BB25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */; };
 		C3ADA1BE25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1BD25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift */; };
 		C3ADA1C625854B9100DA2AB0 /* CalculatorResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1C425854B9100DA2AB0 /* CalculatorResultViewController.swift */; };
@@ -130,6 +132,8 @@
 		C31FBC2325860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		C31FBC2725860D2C00129616 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		C31FBC2825860D2C00129616 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		C31FBC3C258619B500129616 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C31FBC3D258619B500129616 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorViewController+UIPageViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		C3ADA1BD25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorViewController+UIPageViewControllerDataSource.swift"; sourceTree = "<group>"; };
 		C3ADA1C425854B9100DA2AB0 /* CalculatorResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorResultViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 				C3D8B15F2584E96700E58D6C /* Calculator */,
 				C3ADA1C325854B6700DA2AB0 /* CalculatorResult */,
 				C31FBC19258606D100129616 /* Notifications */,
+				C31FBC3B2586199D00129616 /* Profile */,
 				7D9895D82584BC46004A9C88 /* GreenhouseTable */,
 				7D0ABE8125852222005158F0 /* SwiftUIGraphics */,
 				C3D8B1542584E36900E58D6C /* Extensions */,
@@ -375,6 +380,15 @@
 				C31FBC2825860D2C00129616 /* NotificationTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C31FBC3B2586199D00129616 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C31FBC3C258619B500129616 /* ProfileViewController.swift */,
+				C31FBC3D258619B500129616 /* ProfileViewController.xib */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		C3ADA1C325854B6700DA2AB0 /* CalculatorResult */ = {
@@ -487,6 +501,7 @@
 				7D0ABF2B25852BCF005158F0 /* chart.json in Resources */,
 				7D0ABF2625852BCF005158F0 /* Preview Assets.xcassets in Resources */,
 				C31FBC1D258606EB00129616 /* NotificationsViewController.xib in Resources */,
+				C31FBC3F258619B500129616 /* ProfileViewController.xib in Resources */,
 				7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */,
 				7D9895EA2584BE5E004A9C88 /* GHTableViewCell.xib in Resources */,
 				7D989583258414C3004A9C88 /* LaunchScreen.storyboard in Resources */,
@@ -574,6 +589,7 @@
 				C3ADA1CA2585599A00DA2AB0 /* ModalDismissDelegate.swift in Sources */,
 				7D0ABF2025852BCF005158F0 /* RangeView1.swift in Sources */,
 				7D0ABF1C25852BCF005158F0 /* SimulatedButton.swift in Sources */,
+				C31FBC3E258619B500129616 /* ProfileViewController.swift in Sources */,
 				7D0ABF3025852BCF005158F0 /* GraphsForChart.swift in Sources */,
 				7D0ABF2825852BCF005158F0 /* YMarkView.swift in Sources */,
 				C31FBC2925860D2C00129616 /* NotificationTableViewCell.swift in Sources */,
