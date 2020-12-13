@@ -30,15 +30,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         mainVC.tabBarItem = UITabBarItem(
             title: nil,
-            image: UIImage(systemName: "house"),
-            selectedImage: UIImage(systemName: "house.fill")
+            image: UIImage(systemName: "house")?.withTintColor(UIColor(red: 0.792, green: 0.792, blue: 0.792, alpha: 1)).withRenderingMode(.alwaysOriginal),
+            selectedImage: UIImage(systemName: "house.fill")?.withTintColor(UIColor(red: 0, green: 0.396, blue: 0.521, alpha: 1)).withRenderingMode(.alwaysOriginal)
+        )
+        
+        let notificationsVC = NotificationsViewController()
+        
+        notificationsVC.tabBarItem = UITabBarItem(
+            title: nil,
+            image: UIImage(systemName: "bell")?.withTintColor(UIColor(red: 0.792, green: 0.792, blue: 0.792, alpha: 1)).withRenderingMode(.alwaysOriginal),
+            selectedImage: UIImage(systemName: "bell.fill")?.withTintColor(UIColor(red: 0, green: 0.396, blue: 0.521, alpha: 1)).withRenderingMode(.alwaysOriginal)
+        )
+        
+        let profileVC = ProfileViewController()
+        
+        profileVC.tabBarItem = UITabBarItem(
+            title: nil,
+            image: UIImage(systemName: "person")?.withTintColor(UIColor(red: 0.792, green: 0.792, blue: 0.792, alpha: 1)).withRenderingMode(.alwaysOriginal),
+            selectedImage: UIImage(systemName: "person.fill")?.withTintColor(UIColor(red: 0, green: 0.396, blue: 0.521, alpha: 1)).withRenderingMode(.alwaysOriginal)
         )
         
         let tabBarController = UITabBarController()
         
         let mainNC = UINavigationController(rootViewController: mainVC)
         
-        tabBarController.setViewControllers([mainNC], animated: false)
+        mainNC.navigationBar.barTintColor = UIColor(red: 0.087, green: 0.087, blue: 0.087, alpha: 1)
+        mainNC.navigationBar.tintColor = .white
+        mainNC.navigationBar.barStyle = .black
+        mainNC.navigationBar.isTranslucent = false
+        
+        let notificationsNC = UINavigationController(rootViewController: notificationsVC)
+        
+        notificationsNC.navigationBar.barTintColor = UIColor(red: 0.087, green: 0.087, blue: 0.087, alpha: 1)
+        notificationsNC.navigationBar.tintColor = .white
+        notificationsNC.navigationBar.barStyle = .black
+        notificationsNC.navigationBar.shadowImage = UIImage()
+        notificationsNC.navigationBar.isTranslucent = false
+        
+        let profileNC = UINavigationController(rootViewController: profileVC)
+        
+        profileNC.navigationBar.barTintColor = UIColor(red: 0.087, green: 0.087, blue: 0.087, alpha: 1)
+        profileNC.navigationBar.tintColor = .white
+        profileNC.navigationBar.barStyle = .black
+        profileNC.navigationBar.shadowImage = UIImage()
+        profileNC.navigationBar.isTranslucent = false
+        
+        tabBarController.setViewControllers([mainNC, notificationsNC, profileNC], animated: false)
+        
+        tabBarController.tabBar.barTintColor = UIColor(red: 0.087, green: 0.087, blue: 0.087, alpha: 1)
+        tabBarController.tabBar.isTranslucent = false
         
 //        firstVC.addLocationDelegate = secondVC
 //        secondVC.revealLocationDelegate = firstVC

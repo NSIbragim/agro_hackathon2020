@@ -51,6 +51,17 @@
 		7DECA220258540D100185BB6 /* HeaderTablewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */; };
 		7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */; };
 		7DECA2252585414700185BB6 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA2242585414700185BB6 /* Harvest.swift */; };
+		C31FBC1C258606EB00129616 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC1A258606EB00129616 /* NotificationsViewController.swift */; };
+		C31FBC1D258606EB00129616 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31FBC1B258606EB00129616 /* NotificationsViewController.xib */; };
+		C31FBC2125860CD700129616 /* NotificationsViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC2025860CD700129616 /* NotificationsViewController+UITableViewDelegate.swift */; };
+		C31FBC2425860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC2325860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift */; };
+		C31FBC2925860D2C00129616 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC2725860D2C00129616 /* NotificationTableViewCell.swift */; };
+		C31FBC2A25860D2C00129616 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31FBC2825860D2C00129616 /* NotificationTableViewCell.xib */; };
+		C31FBC3E258619B500129616 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC3C258619B500129616 /* ProfileViewController.swift */; };
+		C31FBC3F258619B500129616 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31FBC3D258619B500129616 /* ProfileViewController.xib */; };
+		7DECA220258540D100185BB6 /* HeaderTablewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */; };
+		7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */; };
+		7DECA2252585414700185BB6 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA2242585414700185BB6 /* Harvest.swift */; };
 		7DEDC67C2586051600F92CC6 /* GHMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDC67A2586051600F92CC6 /* GHMoreInfoViewController.swift */; };
 		7DEDC67D2586051600F92CC6 /* GHMoreInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEDC67B2586051600F92CC6 /* GHMoreInfoViewController.xib */; };
 		C3ADA1BB25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */; };
@@ -122,6 +133,14 @@
 		7DEDC67A2586051600F92CC6 /* GHMoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHMoreInfoViewController.swift; sourceTree = "<group>"; };
 		7DEDC67B2586051600F92CC6 /* GHMoreInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHMoreInfoViewController.xib; sourceTree = "<group>"; };
 		B1254A78F4A076E50147F46C /* Pods_marsianStrawberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marsianStrawberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31FBC1A258606EB00129616 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		C31FBC1B258606EB00129616 /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		C31FBC2025860CD700129616 /* NotificationsViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		C31FBC2325860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C31FBC2725860D2C00129616 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		C31FBC2825860D2C00129616 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		C31FBC3C258619B500129616 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C31FBC3D258619B500129616 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorViewController+UIPageViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		C3ADA1BD25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorViewController+UIPageViewControllerDataSource.swift"; sourceTree = "<group>"; };
 		C3ADA1C425854B9100DA2AB0 /* CalculatorResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorResultViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +297,8 @@
 				C3D8B1402584AE5500E58D6C /* AddGH */,
 				C3D8B15F2584E96700E58D6C /* Calculator */,
 				C3ADA1C325854B6700DA2AB0 /* CalculatorResult */,
+				C31FBC19258606D100129616 /* Notifications */,
+				C31FBC3B2586199D00129616 /* Profile */,
 				7D9895D82584BC46004A9C88 /* GreenhouseTable */,
 				7DEDC678258604CC00F92CC6 /* GHMoreInfo */,
 				7D0ABE8125852222005158F0 /* SwiftUIGraphics */,
@@ -355,6 +376,36 @@
 				25ED09E2F235F312AFC2D3B0 /* Pods-marsianStrawberry.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C31FBC19258606D100129616 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				C31FBC1A258606EB00129616 /* NotificationsViewController.swift */,
+				C31FBC2025860CD700129616 /* NotificationsViewController+UITableViewDelegate.swift */,
+				C31FBC2325860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift */,
+				C31FBC1B258606EB00129616 /* NotificationsViewController.xib */,
+				C31FBC2625860D0E00129616 /* Cell */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		C31FBC2625860D0E00129616 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C31FBC2725860D2C00129616 /* NotificationTableViewCell.swift */,
+				C31FBC2825860D2C00129616 /* NotificationTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C31FBC3B2586199D00129616 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C31FBC3C258619B500129616 /* ProfileViewController.swift */,
+				C31FBC3D258619B500129616 /* ProfileViewController.xib */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		C3ADA1C325854B6700DA2AB0 /* CalculatorResult */ = {
@@ -466,6 +517,8 @@
 			files = (
 				7D0ABF2B25852BCF005158F0 /* chart.json in Resources */,
 				7D0ABF2625852BCF005158F0 /* Preview Assets.xcassets in Resources */,
+				C31FBC1D258606EB00129616 /* NotificationsViewController.xib in Resources */,
+				C31FBC3F258619B500129616 /* ProfileViewController.xib in Resources */,
 				7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */,
 				7D9895EA2584BE5E004A9C88 /* GHTableViewCell.xib in Resources */,
 				7D989583258414C3004A9C88 /* LaunchScreen.storyboard in Resources */,
@@ -476,6 +529,7 @@
 				C3D8B1452584AE7D00E58D6C /* AddGHViewController.xib in Resources */,
 				7DEDC67D2586051600F92CC6 /* GHMoreInfoViewController.xib in Resources */,
 				C3D8B1632584E98400E58D6C /* CalculatorViewController.xib in Resources */,
+				C31FBC2A25860D2C00129616 /* NotificationTableViewCell.xib in Resources */,
 				C3ADA1C725854B9100DA2AB0 /* CalculatorResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C31FBC2125860CD700129616 /* NotificationsViewController+UITableViewDelegate.swift in Sources */,
 				C3D8B1622584E98400E58D6C /* CalculatorViewController.swift in Sources */,
 				7D0ABF2D25852BCF005158F0 /* IndicatorView.swift in Sources */,
 				7D0ABF1025852BCF005158F0 /* UserData.swift in Sources */,
@@ -544,6 +599,7 @@
 				7D0ABF1825852BCF005158F0 /* CardView.swift in Sources */,
 				7D0ABF1225852BCF005158F0 /* Chart.swift in Sources */,
 				7D9895E92584BE5E004A9C88 /* GHTableViewCell.swift in Sources */,
+				C31FBC2425860CE400129616 /* NotificationsViewController+UITableViewDataSource.swift in Sources */,
 				C3ADA1C625854B9100DA2AB0 /* CalculatorResultViewController.swift in Sources */,
 				7D0ABF1425852BCF005158F0 /* TimeMarkView.swift in Sources */,
 				C3D8B14F2584E2D600E58D6C /* UIImage+BackgroundColor.swift in Sources */,
@@ -551,8 +607,10 @@
 				C3ADA1CA2585599A00DA2AB0 /* ModalDismissDelegate.swift in Sources */,
 				7D0ABF2025852BCF005158F0 /* RangeView1.swift in Sources */,
 				7D0ABF1C25852BCF005158F0 /* SimulatedButton.swift in Sources */,
+				C31FBC3E258619B500129616 /* ProfileViewController.swift in Sources */,
 				7D0ABF3025852BCF005158F0 /* GraphsForChart.swift in Sources */,
 				7D0ABF2825852BCF005158F0 /* YMarkView.swift in Sources */,
+				C31FBC2925860D2C00129616 /* NotificationTableViewCell.swift in Sources */,
 				7D0ABF2225852BCF005158F0 /* RangeView.swift in Sources */,
 				7D0ABF1325852BCF005158F0 /* TickerView.swift in Sources */,
 				7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */,
@@ -569,6 +627,7 @@
 				7D0ABF1E25852BCF005158F0 /* CheckButton.swift in Sources */,
 				7D0ABF1B25852BCF005158F0 /* GraphsViewForChart.swift in Sources */,
 				7D0ABF1925852BCF005158F0 /* OverlayCardsView.swift in Sources */,
+				C31FBC1C258606EB00129616 /* NotificationsViewController.swift in Sources */,
 				7D0ABF2E25852BCF005158F0 /* GraphView.swift in Sources */,
 				C3D8B14C2584D9F900E58D6C /* CustomSlider.swift in Sources */,
 				C3D8B1522584E36300E58D6C /* UIColor+Shade.swift in Sources */,

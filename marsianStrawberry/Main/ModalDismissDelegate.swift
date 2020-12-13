@@ -13,6 +13,6 @@ protocol ModalDismissDelegate: class {
 
 extension MainViewController: ModalDismissDelegate {
     func dismissAll(animated: Bool) {
-        navigationController?.dismiss(animated: true, completion: nil)
+        navigationController?.dismiss(animated: animated, completion: nil)
     }
 }
