@@ -1,6 +1,0 @@
-framework module Pods_marsianStrawberry {
-  umbrella header "Pods-marsianStrawberry-umbrella.h"
-
-  export *
-  module * { export * }
-}
