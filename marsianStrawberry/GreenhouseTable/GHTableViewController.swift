@@ -31,7 +31,6 @@ class GHTableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.tableView.separatorColor = .clear
         
-
         //create a button or any UIView and add to subview
         let button=UIButton.init(type: .system)
         button.setTitle("Настроить", for: .normal)
@@ -44,7 +43,6 @@ class GHTableViewController: UITableViewController {
 
         //set constrains
         button.translatesAutoresizingMaskIntoConstraints = false
-        
         button.rightAnchor.constraint(equalTo: tableView.layoutMarginsGuide.rightAnchor, constant: 0).isActive = true
         button.widthAnchor.constraint(equalToConstant: 335).isActive = true
         button.heightAnchor.constraint(equalToConstant: 44).isActive = true
@@ -52,10 +50,11 @@ class GHTableViewController: UITableViewController {
         button.bottomAnchor.constraint(equalTo: tableView.layoutMarginsGuide.bottomAnchor, constant: -20).isActive = true
     }
 
-
-    @objc func leftNavBarItemPressed(){
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
 
     }
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -82,11 +81,14 @@ class GHTableViewController: UITableViewController {
             cell.configureUI()
             return cell
         } else if indexPath.item < greenhouses.count - 1 {
+
             self.tableView.register(GHTableViewCell.self, forCellReuseIdentifier: GHCellID)
 
             self.tableView.rowHeight = 191 // 175 + 8 сверху + 8 снизу
             let cell = tableView.dequeueReusableCell(withIdentifier: GHCellID, for: indexPath) as! GHTableViewCell
             // Configure the cell...
+            cell.selectionStyle = .none
+
             print("Configuring cell number: ", indexPath.item)
             cell.setParams(params: greenhouses[indexPath.item - 1], numberOfGH: indexPath.item)
             cell.configureUI()
@@ -104,52 +106,10 @@ class GHTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.item)
         self.tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
+        if (indexPath.item > 0) && (indexPath.item < greenhouses.count - 1){
+            let moreInfoVC = GHMoreInfoViewController()
+            moreInfoVC.setParams(params: greenhouses[indexPath.item - 1], numberOfGH: indexPath.item)
+            navigationController?.pushViewController(moreInfoVC, animated: true)
+        }
     }
-
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
 }
