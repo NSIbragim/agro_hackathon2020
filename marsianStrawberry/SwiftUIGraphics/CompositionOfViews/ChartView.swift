@@ -27,7 +27,7 @@ struct ChartView : View {
     var body: some View {
        GeometryReader { geometry in
         VStack  (alignment: .leading, spacing: 10) {
-            Text("   CHART \(self.index + 1):  \(self.chart.xTime.first!) - \(self.chart.xTime.last!)  \(self.chart.lines.count)  lines")
+            Text("График теплицы № \(self.index + 1)")
             .font(.headline)
             .foregroundColor(Color("ColorTitle"))
             Text(" ").font(.footnote)
@@ -59,7 +59,7 @@ struct ChartView_Previews : PreviewProvider {
         NavigationView {
         ChartView(chart: chartsData[0])
               .environmentObject(UserData())
-              .navigationBarTitle(Text("Followers"))
+              .navigationBarTitle(Text("Изменения"))
         }
         .colorScheme(.dark)
     }

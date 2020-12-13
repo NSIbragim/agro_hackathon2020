@@ -19,7 +19,7 @@ struct ListChartsView: View {
                ChartView(chart: self.userData.charts[indexChat])
                     .frame(height: geometry.size.height)
             }// List
-            .navigationBarTitle(Text("Folowers"))
+            .navigationBarTitle(Text("История изменений"))
         } //Geometry
         }
     }

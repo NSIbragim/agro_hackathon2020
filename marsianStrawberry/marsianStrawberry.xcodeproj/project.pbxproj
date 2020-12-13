@@ -59,6 +59,11 @@
 		C31FBC2A25860D2C00129616 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31FBC2825860D2C00129616 /* NotificationTableViewCell.xib */; };
 		C31FBC3E258619B500129616 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31FBC3C258619B500129616 /* ProfileViewController.swift */; };
 		C31FBC3F258619B500129616 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31FBC3D258619B500129616 /* ProfileViewController.xib */; };
+		7DECA220258540D100185BB6 /* HeaderTablewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */; };
+		7DECA221258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */; };
+		7DECA2252585414700185BB6 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECA2242585414700185BB6 /* Harvest.swift */; };
+		7DEDC67C2586051600F92CC6 /* GHMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDC67A2586051600F92CC6 /* GHMoreInfoViewController.swift */; };
+		7DEDC67D2586051600F92CC6 /* GHMoreInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEDC67B2586051600F92CC6 /* GHMoreInfoViewController.xib */; };
 		C3ADA1BB25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1BA25850A8E00DA2AB0 /* CalculatorViewController+UIPageViewControllerDelegate.swift */; };
 		C3ADA1BE25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1BD25850AA000DA2AB0 /* CalculatorViewController+UIPageViewControllerDataSource.swift */; };
 		C3ADA1C625854B9100DA2AB0 /* CalculatorResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA1C425854B9100DA2AB0 /* CalculatorResultViewController.swift */; };
@@ -125,6 +130,8 @@
 		7DECA21E258540D100185BB6 /* HeaderTablewViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTablewViewCell.swift; sourceTree = "<group>"; };
 		7DECA21F258540D100185BB6 /* HeaderTablewViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTablewViewCellTableViewCell.xib; sourceTree = "<group>"; };
 		7DECA2242585414700185BB6 /* Harvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harvest.swift; sourceTree = "<group>"; };
+		7DEDC67A2586051600F92CC6 /* GHMoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHMoreInfoViewController.swift; sourceTree = "<group>"; };
+		7DEDC67B2586051600F92CC6 /* GHMoreInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHMoreInfoViewController.xib; sourceTree = "<group>"; };
 		B1254A78F4A076E50147F46C /* Pods_marsianStrawberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marsianStrawberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31FBC1A258606EB00129616 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		C31FBC1B258606EB00129616 /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
@@ -293,6 +300,7 @@
 				C31FBC19258606D100129616 /* Notifications */,
 				C31FBC3B2586199D00129616 /* Profile */,
 				7D9895D82584BC46004A9C88 /* GreenhouseTable */,
+				7DEDC678258604CC00F92CC6 /* GHMoreInfo */,
 				7D0ABE8125852222005158F0 /* SwiftUIGraphics */,
 				C3D8B1542584E36900E58D6C /* Extensions */,
 				7D989574258414C1004A9C88 /* Products */,
@@ -350,6 +358,15 @@
 				7DECA2242585414700185BB6 /* Harvest.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7DEDC678258604CC00F92CC6 /* GHMoreInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7DEDC67A2586051600F92CC6 /* GHMoreInfoViewController.swift */,
+				7DEDC67B2586051600F92CC6 /* GHMoreInfoViewController.xib */,
+			);
+			path = GHMoreInfo;
 			sourceTree = "<group>";
 		};
 		811438E46D2F9478FB04D2AC /* Pods */ = {
@@ -510,6 +527,7 @@
 				7D9895E42584BCF1004A9C88 /* GHTableViewController.xib in Resources */,
 				7D0ABF2C25852BCF005158F0 /* overview.json in Resources */,
 				C3D8B1452584AE7D00E58D6C /* AddGHViewController.xib in Resources */,
+				7DEDC67D2586051600F92CC6 /* GHMoreInfoViewController.xib in Resources */,
 				C3D8B1632584E98400E58D6C /* CalculatorViewController.xib in Resources */,
 				C31FBC2A25860D2C00129616 /* NotificationTableViewCell.xib in Resources */,
 				C3ADA1C725854B9100DA2AB0 /* CalculatorResultViewController.xib in Resources */,
@@ -597,6 +615,7 @@
 				7D0ABF1325852BCF005158F0 /* TickerView.swift in Sources */,
 				7D989577258414C1004A9C88 /* AppDelegate.swift in Sources */,
 				7DECA2252585414700185BB6 /* Harvest.swift in Sources */,
+				7DEDC67C2586051600F92CC6 /* GHMoreInfoViewController.swift in Sources */,
 				7D0ABF0F25852BCF005158F0 /* Data.swift in Sources */,
 				7D0ABF1D25852BCF005158F0 /* CheckMarksView.swift in Sources */,
 				7D9895F32584C316004A9C88 /* GreenHouse.swift in Sources */,

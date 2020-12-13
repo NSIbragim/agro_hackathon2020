@@ -275,5 +275,7 @@ class HeaderTablewViewCell: UITableViewCell {
         }
     }
     
-
+    @objc func didTapView(){
+        print("cell tapped (inside)")
+    }
 }
