@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //
 //        thirdVC.tabBarItem = UITabBarItem(title: "More", image: UIImage(systemName: "ellipsis"), tag: 3)
         
-        let mainVC = MainViewController()
+        let mainVC = GHTableViewController()
         
         mainVC.tabBarItem = UITabBarItem(
             title: nil,
@@ -91,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         window = UIWindow()
-        window?.backgroundColor = .white
+        window?.backgroundColor = .black
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         
