@@ -124,7 +124,7 @@ class CalculatorViewController: UIViewController {
         
         modeSegment.setTitleTextAttributes(attributes, for: .normal)
         modeSegment.setTitle("от результата", forSegmentAt: 0)
-        modeSegment.setTitle("от ресурсов", forSegmentAt: 1)
+        modeSegment.setTitle("от бюджета", forSegmentAt: 1)
         
         modeSegment.addTarget(self, action: #selector(modeSegmentChanged), for: .valueChanged)
     }
